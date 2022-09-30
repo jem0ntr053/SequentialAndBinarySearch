@@ -48,5 +48,8 @@ def search_for_record_bin():
 
 
 if __name__ == '__main__':
+
+    # Please feel free to comment out the function you don't want to run:
+
     # search_for_record_seq()
     search_for_record_bin()
