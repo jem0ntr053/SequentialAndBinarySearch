@@ -6,13 +6,10 @@ def search_for_record_seq():
     with open(fname, 'r') as f:
         lines = f.readlines()
         print(lines)
-    # Ask user “Enter last name” and "Enter first name" and search sequentially
-    # for the record with the last name and first name.
+
     last_name = input("Enter last name: \n")
     first_name = input("Enter first name: \n")
-    # Use the entered names (last name, first name) as search key to
-    # sequentially search through the file for the record with the key value.
-    # Only print the record if it is found. Only print one error if not found
+
     for line in lines:
         if last_name in line and first_name in line:
             print(f"Found Match: {line}")
@@ -21,6 +18,7 @@ def search_for_record_seq():
         print("No record found")
 
 
+# with binary search
 def search_for_record_bin():
     fname = input("Enter your file name: \n")
     with open(fname, 'r') as f:
