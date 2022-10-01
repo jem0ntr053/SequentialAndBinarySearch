@@ -15,7 +15,7 @@ def search_for_record_seq():
             print(f"Found Match: {line}")
             break
     else:
-        print("No record found")
+        print("record not found")
 
 
 # with binary search
@@ -41,7 +41,7 @@ def search_for_record_bin():
                 high = mid - 1
             else:
                 low = mid + 1
-        return 'No Match Found'
+        return 'record not found'
 
     print(binary_search(lines, first_name + " " + last_name
                                           + "\n"))
